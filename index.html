@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson County Gutter Pros | Gutter Cleaning, Repair & Installation Specialists</title>
+    <meta name="description" content="We specialize in gutter cleaning, repair, and installation in Johnson County. Professional gutter services—not roofing, not siding, just gutters done right.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .hero {
+            background: linear-gradient(rgba(21, 128, 61, 0.9), rgba(21, 128, 61, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%2316a34a" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .scope-intro {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+        }
+        .scope-intro h2 {
+            color: #15803d;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .scope-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .scope-section {
+            background: #f0fdf4;
+            padding: 3rem 2rem;
+            margin: 0 -2rem 3rem -2rem;
+        }
+        .scope-section h2 {
+            text-align: center;
+            color: #15803d;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .scope-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .scope-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 4px solid #16a34a;
+        }
+        .scope-card h3 {
+            color: #15803d;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .scope-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .scope-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #666;
+        }
+        .scope-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #16a34a;
+            font-weight: bold;
+        }
+        .boundaries-section {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 3rem -2rem;
+            border-top: 3px solid #16a34a;
+            border-bottom: 3px solid #16a34a;
+        }
+        .boundaries-section h2 {
+            text-align: center;
+            color: #15803d;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .boundaries-intro {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .boundaries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .boundary-card {
+            padding: 1.5rem;
+            background: #fef2f2;
+            border-radius: 8px;
+            border-left: 4px solid #dc2626;
+        }
+        .boundary-card h3 {
+            color: #dc2626;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .boundary-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        .specialty-note {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        .specialty-note h3 {
+            color: #92400e;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+        .specialty-note p {
+            color: #78350f;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #15803d;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.05rem;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #16a34a;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Johnson County Gutter Pros</div>
+            <div class="phone">📞 (913) 730-6638</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>We Handle Gutters—Only Gutters</h1>
+            <p>Gutter cleaning, repair, and installation specialists. Not roofing. Not siding. Just gutters, done right.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="scope-intro">
+            <h2>Our Service Scope</h2>
+            <p>We've built our business around being gutter specialists. That focused expertise means better service, faster turnaround, and technicians who know gutters inside and out. Here's exactly what we do—and what we don't.</p>
+        </div>
+
+        <section class="scope-section">
+            <h2>What We Do: Complete Gutter Services</h2>
+            <div class="scope-grid">
+                <div class="scope-card">
+                    <h3>Gutter Cleaning</h3>
+                    <ul>
+                        <li>Debris and leaf removal</li>
+                        <li>Downspout flushing and clearing</li>
+                        <li>Roof edge cleanup</li>
+                        <li>Spring and fall cleaning packages</li>
+                        <li>One-time or recurring service</li>
+                    </ul>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Gutter Repair</h3>
+                    <ul>
+                        <li>Leak and seam repairs</li>
+                        <li>Section replacement</li>
+                        <li>Pitch adjustment and re-sloping</li>
+                        <li>Bracket and hanger reinforcement</li>
+                        <li>Downspout repairs and relocation</li>
+                    </ul>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Gutter Installation</h3>
+                    <ul>
+                        <li>Full system replacement</li>
+                        <li>Seamless aluminum gutters</li>
+                        <li>Various sizes (5", 6", custom)</li>
+                        <li>Multiple color options</li>
+                        <li>Professional measurement and installation</li>
+                    </ul>
+                </div>
+
+                <div class="scope-card">
+                    <h3>Gutter Guards & Accessories</h3>
+                    <ul>
+                        <li>Gutter guard installation</li>
+                        <li>Screen and mesh systems</li>
+                        <li>Downspout extensions</li>
+                        <li>Rain diverters</li>
+                        <li>Splash blocks</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="specialty-note">
+            <h3>🏡 Why Specialize?</h3>
+            <p>We focus exclusively on gutters because that's how we deliver the best service. Our crews are gutter experts—not generalists juggling roofing one day and siding the next. This specialization means faster service, better troubleshooting, and crews who've seen every gutter problem Johnson County can throw at them.</p>
+        </div>
+
+        <section class="boundaries-section">
+            <h2>What We Don't Do</h2>
+            <p class="boundaries-intro">Being upfront about our scope helps everyone. We'd rather refer you to a qualified specialist than take on work outside our expertise. Here's what we don't handle:</p>
+            <div class="boundaries-grid">
+                <div class="boundary-card">
+                    <h3>✗ Roofing Work</h3>
+                    <p>We don't do roof repairs, shingle replacement, or roof inspections. If your roof needs work, we can recommend local roofers we trust.</p>
+                </div>
+
+                <div class="boundary-card">
+                    <h3>✗ Siding Services</h3>
+                    <p>Siding installation, repair, or replacement isn't part of our service. We focus on what happens below the roofline.</p>
+                </div>
+
+                <div class="boundary-card">
+                    <h3>✗ Fascia/Soffit Replacement</h3>
+                    <p>Major fascia or soffit work requires carpentry expertise beyond gutter installation. We can recommend carpenters if needed.</p>
+                </div>
+
+                <div class="boundary-card">
+                    <h3>✗ Foundation Work</h3>
+                    <p>While proper gutters protect foundations, we don't do foundation repair, grading, or drainage system installation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Request Gutter Service</h2>
+            <p class="subtitle">Get a quote for gutter cleaning, repair, or installation</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="JCO-GUTTER-001">
+                <input type="hidden" name="market" value="Johnson County">
+                <input type="hidden" name="industry" value="Gutter Cleaning">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="johnsoncountygutterpros.com">
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Service Address *</label>
+                    <input type="text" id="address" name="address" required placeholder="Street address">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="property_type">Property Type *</label>
+                    <select id="property_type" name="property_type" required>
+                        <option value="">Select property type...</option>
+                        <option value="Single Family Home">Single Family Home</option>
+                        <option value="Two-Story Home">Two-Story Home</option>
+                        <option value="Townhome/Condo">Townhome/Condo</option>
+                        <option value="Commercial Building">Commercial Building</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="service_needed">Service Needed *</label>
+                    <select id="service_needed" name="service_needed" required>
+                        <option value="">Select service...</option>
+                        <option value="Gutter Cleaning">Gutter Cleaning</option>
+                        <option value="Gutter Repair">Gutter Repair</option>
+                        <option value="Gutter Installation">Gutter Installation</option>
+                        <option value="Gutter Guards">Gutter Guards</option>
+                        <option value="Multiple Services">Multiple Services</option>
+                        <option value="Not Sure - Need Assessment">Not Sure - Need Assessment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="urgency">Timeline *</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">Select timeline...</option>
+                        <option value="ASAP - This Week">ASAP - This Week</option>
+                        <option value="Within 2 Weeks">Within 2 Weeks</option>
+                        <option value="This Month">This Month</option>
+                        <option value="Planning Ahead">Planning Ahead</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details (Optional)</label>
+                    <textarea id="details" name="details" placeholder="Describe your gutter needs or any specific concerns..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Get Free Quote →</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Johnson County Gutter Pros. Professional Gutter Services.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Serving Overland Park, Olathe, Lenexa, Shawnee, Leawood & All of Johnson County, KS</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
